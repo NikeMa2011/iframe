@@ -7,7 +7,7 @@
 点击绿色的`code`字样的按钮<br>
 点击`local`分区<br>
 点击最下行的`Download ZIP`<br>
-等待下载完成
+等待下载完成<br>
 进入你的文件资源管理器<br>
 点击`Download`分区<br>
 找到你刚刚下载的文件(是以`.zip`结尾)<br>
