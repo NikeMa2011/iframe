@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="CN-zh">
+<head>
+    <meta charset="utf-8">
+    <title>iframe</title>
+</head>
+<body>
+    <iframe id="frame" src="https://www.bilibili.com/video/BV1Pe22YFE6A/" frameborder="0"></iframe>
+    <input id="inp" type="text">
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    iframe {
+        height: 97vh;
+        width: 100vw;
+    }
+    input {
+        width: calc(100vw - 5px);
+    }
+</style>
+<script>
+    const frame = document.getElementById("frame");
+    const input = document.getElementById("inp");
+    
+    input.addEventListener("keydown", function(event){
+        if(event.key == "Enter"){
+            frame.src = input.value;
+            console.log("refresh");
+        }
+    });
+</script>
+</html>
